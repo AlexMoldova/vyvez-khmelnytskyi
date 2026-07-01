@@ -65,13 +65,12 @@ ul{list-style:none}
 @media(max-width:600px){
   .hero-photo-wrap{max-width:340px}
   .hero-photo-wrap .uniform-photo{height:240px}
-}}
+}
 .gallery-item img{height:100%!important;border-radius:0!important}
 .format-image .uniform-photo{height:180px!important;border-radius:0!important}
 @media(max-width:600px){
   .uniform-photo{height:200px}
   .format-image .uniform-photo{height:160px!important}
-  .hero-photo-wrap{max-width:300px}
 }
 .hero{position:relative;padding:80px 20px;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(0,93,169,.06) 0%,transparent 60%)}
