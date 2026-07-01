@@ -60,7 +60,12 @@ ul{list-style:none}
 /* ── UNIFORM PHOTOS ───────────────────────────────────────────── */
 .uniform-photo{width:100%;height:260px;object-fit:cover;display:block;border-radius:var(--radius)}
 .uniform-photo-wrap{max-width:100%;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
-.hero-photo-wrap{max-width:400px;margin:0 auto;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line)}
+.hero-photo-wrap{max-width:520px;margin:0 auto;overflow:hidden;border-radius:var(--radius);border:1px solid var(--line)}
+.hero-photo-wrap .uniform-photo{height:340px}
+@media(max-width:600px){
+  .hero-photo-wrap{max-width:340px}
+  .hero-photo-wrap .uniform-photo{height:240px}
+}}
 .gallery-item img{height:100%!important;border-radius:0!important}
 .format-image .uniform-photo{height:180px!important;border-radius:0!important}
 @media(max-width:600px){
