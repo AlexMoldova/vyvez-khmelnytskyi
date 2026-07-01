@@ -161,7 +161,7 @@ ul{list-style:none}
 .footer a:hover{color:var(--accent)}
 .footer-brand{font-family:var(--font-d);font-size:20px;color:var(--text)}
 .footer-brand .accent{color:var(--accent)}
-.footer-bottom{max-width:1200px;margin:32px auto 0;padding-top:20px;border-top:1px solid var(--line);text-align:center;font-size:13px;color:var(--text2)}
+.footer{padding-bottom:90px!important}
 
 /* ── PROCESS ───────────────────────────────────────────────────── */
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -182,19 +182,19 @@ ul{list-style:none}
 .extra-price b{font-family:var(--font-d);font-size:20px;color:var(--accent)}
 
 /* ── FLOATING CONTACTS (як на evakuator-odesa.site) ──────────── */
-.float-contacts{position:fixed!important;right:16px!important;bottom:80px!important;left:auto!important;z-index:9999!important;display:flex;flex-direction:column;gap:12px}
-.float-btn{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;box-shadow:0 6px 18px -4px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s;position:relative}
-.float-btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 10px 24px -6px rgba(0,0,0,.35)}
-.float-btn svg{width:24px;height:24px}
-.float-btn-call{background:var(--accent);color:var(--black)}
+.float-contacts{position:fixed!important;right:12px!important;bottom:90px!important;left:auto!important;z-index:9998!important;display:flex;flex-direction:column;gap:8px}
+.float-btn{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.2);transition:transform .2s,box-shadow .2s;position:relative}
+.float-btn:hover{transform:translateY(-2px) scale(1.05);box-shadow:0 8px 20px -4px rgba(0,0,0,.3)}
+.float-btn svg{width:22px;height:22px}
+.float-btn-call{background:var(--accent);color:#fff}
 .float-btn-viber{background:#7360f2}
 .float-btn-whatsapp{background:#25d366}
 .float-btn-tooltip{position:absolute;right:calc(100% + 10px);white-space:nowrap;background:#1a1a1a;color:#fff;font-size:11px;padding:5px 10px;border-radius:6px;opacity:0;pointer-events:none;transition:opacity .2s;font-weight:500}
 .float-btn:hover .float-btn-tooltip{opacity:1}
 @media(max-width:600px){
-  .float-contacts{bottom:80px!important;right:10px!important;gap:8px}
-  .float-btn{width:44px;height:44px}
-  .float-btn svg{width:20px;height:20px}
+  .float-contacts{bottom:75px!important;right:6px!important;gap:6px}
+  .float-btn{width:40px;height:40px}
+  .float-btn svg{width:18px;height:18px}
   .float-btn-tooltip{display:none}
 }
 
@@ -247,12 +247,12 @@ ul{list-style:none}
 }
 
 /* ── MOBILE BOTTOM BAR (плаваюча кнопка з номером знизу) ──── */
-.mobile-call-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--accent);padding:12px 16px;display:flex;align-items:center;justify-content:center;gap:12px;box-shadow:0 -4px 20px rgba(0,0,0,.15);animation:slideUp .3s ease}
+.mobile-call-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--accent);padding:10px 16px;display:flex;align-items:center;justify-content:center;gap:10px;box-shadow:0 -3px 12px rgba(0,0,0,.12)}
 .mobile-call-bar a{color:#fff;text-decoration:none;font-weight:700;font-size:18px;display:flex;align-items:center;gap:10px}
-.mobile-call-bar .bar-icon{width:42px;height:42px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;animation:pulse 2s infinite}
+.mobile-call-bar .bar-icon{width:38px;height:38px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
 .mobile-call-bar .bar-text{display:flex;flex-direction:column}
-.mobile-call-bar .bar-label{font-size:11px;opacity:.8;text-transform:uppercase;letter-spacing:1px}
-.mobile-call-bar .bar-phone{font-family:var(--font-d);font-size:18px}
+.mobile-call-bar .bar-label{font-size:10px;opacity:.8;text-transform:uppercase;letter-spacing:1px}
+.mobile-call-bar .bar-phone{font-family:var(--font-d);font-size:17px}
 @keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
 @media(min-width:769px){.mobile-call-bar{display:none}}
 
